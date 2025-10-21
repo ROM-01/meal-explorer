@@ -1,0 +1,43 @@
+.favoriteCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.favoriteCard:hover {
+  transform: translateY(-4px);
+}
+
+.favoriteCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.favoriteCard h3 {
+  color: #333;
+  margin: 0.75rem 0;
+  font-size: 1.1rem;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.favoriteCard button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.favoriteCard button:hover {
+  background-color: #ffd180;
+  color: #333;
+}

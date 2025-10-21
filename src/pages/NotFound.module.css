@@ -1,0 +1,34 @@
+.notFound {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #333;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.notFound h1 {
+  font-size: 3rem;
+  color: #ff7043;
+  margin-bottom: 1rem;
+}
+
+.notFound p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.notFound a {
+  color: #fff;
+  background-color: #ff7043;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.notFound a:hover {
+  background-color: #ffd180;
+  color: #333;
+  transform: translateY(-2px);
+}

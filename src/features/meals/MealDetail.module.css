@@ -1,0 +1,50 @@
+.mealDetail {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.mealImg {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.mealDetail h1 {
+  color: #ff7043;
+  margin-bottom: 0.5rem;
+}
+
+.mealDetail p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.mealDetail strong {
+  color: #333;
+}
+
+.mealDetail h3 {
+  margin-top: 1.5rem;
+  color: #ff7043;
+}
+
+.mealDetail a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff7043;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.mealDetail a:hover {
+  color: #ffd180;
+  transform: translateY(-2px);
+}

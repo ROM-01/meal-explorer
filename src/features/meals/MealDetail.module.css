@@ -1,50 +1,92 @@
-.mealDetail {
-  background-color: #ffffff;
+.mealDetailBox {
+  background: #fff;
   padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  max-width: 800px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 1000px;
   margin: 2rem auto;
-  font-family: "Inter", "Segoe UI", sans-serif;
-  color: #333;
+  text-align: left;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
 }
 
-.mealImg {
-  width: 100%;
-  border-radius: 16px;
+.detailImgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1.5rem;
-  object-fit: cover;
 }
 
-.mealDetail h1 {
-  color: #ff7043;
-  margin-bottom: 0.5rem;
+.detailImg {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
 }
 
-.mealDetail p {
-  color: #555;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.detailImg:hover {
+  transform: scale(1.02);
+}
+
+.scrollBox {
+  max-height: 250px;
+  overflow-y: auto;
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
   line-height: 1.6;
+  color: #555;
 }
 
-.mealDetail strong {
-  color: #333;
-}
-
-.mealDetail h3 {
-  margin-top: 1.5rem;
-  color: #ff7043;
-}
-
-.mealDetail a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #ff7043;
+.backBtn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
   font-weight: 600;
-  text-decoration: none;
-  transition: all 0.25s ease;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-.mealDetail a:hover {
-  color: #ffd180;
+.backBtn:hover {
+  background-color: var(--secondary);
+}
+
+.favButton {
+  margin-top: 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.7rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.favButton:hover {
+  background-color: var(--secondary);
   transform: translateY(-2px);
 }
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+

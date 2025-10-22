@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 0.1rem 0;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+  margin-top: auto;
+}
+
+.space {
+    height: 90%;
+    width: 100%;
+}

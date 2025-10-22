@@ -1,38 +1,27 @@
-.favoritesList {
-  text-align: center;
-  font-family: "Inter", "Segoe UI", sans-serif;
-}
-
-.favoritesList h2 {
-  color: var(--primary);
-  font-size: 2rem;
-  margin-bottom: 4rem;
-}
-
-.favoritesGrid {
+.mealGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   justify-items: center;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   width: 100%;
   max-width: 1200px;
 }
 
+.noResults {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
 @media (max-width: 1024px) {
-  .favoritesGrid {
+  .mealGrid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 600px) {
-  .favoritesGrid {
+  .mealGrid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-}
-
-.emptyMessage {
-  color: var(--text-light);
-  font-size: 1.2rem;
-  margin-top: 2rem;
 }

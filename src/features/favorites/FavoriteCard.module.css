@@ -6,6 +6,7 @@
   text-align: center;
   transition: all 0.25s ease;
   cursor: pointer;
+  width: calc(100% - 1rem);
 }
 
 .favoriteCard:hover {
@@ -40,4 +41,12 @@
 .favoriteCard button:hover {
   background-color: #ffd180;
   color: #333;
+}
+
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }

@@ -23,15 +23,11 @@ This project was built by Alayna Taylor, a front-end enthusiast exploring React 
 
 react-router-dom
 
-
 ---
 
 ## API
 
-## API
-
 This project uses [TheMealDB API](https://www.themealdb.com/api.php): public, no credentials required.
-
 
 ---
 

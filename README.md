@@ -1,16 +1,46 @@
-# React + Vite
+# Meal Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meal Explorer is a React single-page application (SPA) that lets users search for meals, view detailed recipes, watch tutorials, and save favorites. Built with React, React Router, and TheMealDB API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About the Creator
 
-## React Compiler
+This project was built by Alayna Taylor, a front-end enthusiast exploring React and web app development. I enjoy building interactive apps that fetch and display live data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. git clone https://github.com/ROM-01/meal-explorer.git
+2. cd meal-explorer
+3. npm install
+4. npm run dev 
+
+---
+
+## Dependencies
+
+react-router-dom
+
+
+---
+
+## API
+
+## API
+
+This project uses [TheMealDB API](https://www.themealdb.com/api.php): public, no credentials required.
+
+
+---
+
+## Usage
+
+- Enter a meal name in the search bar to find meals.
+
+- Click on a meal card to view detailed recipe information.
+
+- Save your favorite meals to revisit later.
+
+- See your previous search results from home page.

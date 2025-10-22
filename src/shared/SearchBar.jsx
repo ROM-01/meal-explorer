@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../pages/Home.module.css";
 
@@ -7,12 +7,15 @@ export default function SearchBar({ initialQuery = "" }) {
   const [diceLoading, setDiceLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (!search) return;
-    localStorage.setItem("lastSearch", search);
-    navigate("/search", { state: { query: search } });
-  };
+  const handleSearch = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (!search.trim()) return;
+      localStorage.setItem("lastSearch", search);
+      navigate("/search", { state: { query: search } });
+    },
+    [search, navigate]
+  );
 
   const handleRandom = async () => {
     setDiceLoading(true);
@@ -41,7 +44,9 @@ export default function SearchBar({ initialQuery = "" }) {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button type="submit">Search</button>
+      <button type="submit" disabled={!search.trim()}>
+        Search
+      </button>
       <button
         type="button"
         className={`${styles.randomBtn} ${diceLoading ? styles.spinning : ""}`}

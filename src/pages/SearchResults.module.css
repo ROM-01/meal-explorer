@@ -1,0 +1,18 @@
+.searchResults {
+  padding: 2rem;
+  text-align: center;
+}
+
+.mealGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.noResults {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
